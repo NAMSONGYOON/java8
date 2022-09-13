@@ -5,7 +5,7 @@ public class Cont1 {
 
 	public static void main(String[] args) {
 		int a=90;
-		if(a>=60) { //조건분기문
+		if(a>=60) { //조건분기문 : 아래와 같이 일의 흐름이 조건에 따라 달리 적용해야할떄 사용
 			pass(); 
 		} else {
 			fail();
