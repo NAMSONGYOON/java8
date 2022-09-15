@@ -1,0 +1,19 @@
+package sec4;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+		
+		int tot=0;
+		for(int i=0;i<=100;i++) {
+			if(i%2==1)
+			tot+=i;
+		}
+		System.out.println("0~100 3의 배수의 총합 : "+tot);
+		tot = 0;
+		for(int i=0;i<=100;i+=3) {
+			
+		}
+	}
+
+}
