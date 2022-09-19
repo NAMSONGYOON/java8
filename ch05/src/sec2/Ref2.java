@@ -43,7 +43,10 @@ public class Ref2 {
 		Week [] days = Week.values();
 		for(Week day : days) {
 			System.out.println(day);
-		}
+			
+			}
+			
+		
 	}
 
 }
