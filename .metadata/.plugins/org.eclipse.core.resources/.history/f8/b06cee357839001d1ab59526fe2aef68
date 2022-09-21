@@ -1,0 +1,11 @@
+package sec2;
+
+public class Board {
+	int pno;
+	String ptitle;
+	String pcontents;
+	String writer;
+	int pdate;
+	
+	
+}

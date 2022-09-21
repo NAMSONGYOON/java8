@@ -13,11 +13,7 @@ public class Product {
 		this.pid = pid;	this.pname = pname; this.amount = amount; this.price = price; this.img = img;
 	}	
 
-	public int = calMoney() {
-		int 
-		
-		amount*price
-	}
+	public int = calMoney amount*price
 	CalRank
 	printImg
 	printProduct
