@@ -1,0 +1,14 @@
+package sec2;
+
+public class AccountEx {
+
+	public static void main(String[] args) {
+
+		System.out.println("입금: "+runDeposit);
+		System.out.println("출금: "+runWithdraw);
+		System.out.println("잔액조회 "+runBalance);
+		System.out.println("계좌정보보기 "+printAccount);
+
+	}
+
+}

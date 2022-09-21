@@ -1,0 +1,37 @@
+package sec2;
+
+public class Student {
+
+	String name;
+	int kor;
+	int eng;
+	int mat;
+	
+	
+	public Student () {
+	public Student(String name){ this.name = name; }
+	public Student(String name, int kor, int eng, int mat) {
+		this.name=name;
+		this.kor=kor;
+		this.eng=eng; 
+		this.mat=mat;
+	
+	}
+	if(avg>=90) {
+		hak="A"
+			
+	}else if(avg>=80) {
+		hak="B"
+				
+	}else if(avg>=70) {
+		hak="C"
+				
+	}else if(avg<70) {
+		hak="F"
+	}
+	
+	
+	
+	}
+ 
+}

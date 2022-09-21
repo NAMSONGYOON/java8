@@ -1,0 +1,50 @@
+package sec2;
+
+public class StudentEx {
+
+	public static void main(String[] args) {
+
+		System.out.println("총점: "+calcTot);
+		System.out.println("평균: "+calcTot/3);
+		System.out.println("학점: "+calcHak);
+		System.out.println("판정: "+calcRes);
+		
+	}
+
+	import java.util.Scanner;
+
+			System.out.println("점수 입력 : ");
+			Scanner sc = new Scanner(System.in);
+			int num = sc.nextInt();
+
+			if(num>=80) {
+				System.out.println("합격");
+			} else {
+				System.out.println("불합격");
+				
+				Scanner sc = new Scanner(System.in);
+				System.out.print("총점: ");
+				int calcTot = sc.next();
+				System.out.print("평균: ");
+				int calcTot/3 = sc.nextInt();
+				System.out.print("학점: ");
+				int calcHak = sc.nextInt();
+				System.out.print("판정: ");
+				int calcRes = sc.nextInt();
+				int tot = kor+eng+mat; // 총점
+				double avg = (float) tot / 3; //평균
+				String pan = "탈락";
+				if(kor>=70 && eng>=70 && mat>=70) 
+				pan = "합격"; //판정
+				String des = "";
+		        if(kor>=90 || eng>=90 || mat>=90)
+		        des="과목우수";
+				System.out.print(name+"님의 총점은"+tot+"이며, 평균은"+avg+"이고,"+pan+"하셨으며, 비고는"+pan+"입니다.");
+				sc.close();
+
+		
+			}
+
+}
+
+

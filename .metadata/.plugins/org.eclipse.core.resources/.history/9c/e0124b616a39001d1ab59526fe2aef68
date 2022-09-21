@@ -1,0 +1,67 @@
+package sec2;
+
+public class StudentEx {
+
+	public static void main(String[] args) {
+
+		System.out.println("총점: "+calcTot);
+		System.out.println("평균: "+calcTot/3);
+		System.out.println("학점: "+calcHak);
+		System.out.println("판정: "+calcRes);
+		
+	}
+
+	import java.util.Scanner;
+
+			System.out.println("점수 입력 : ");
+			Scanner sc = new Scanner(System.in);
+			int num = sc.nextInt();
+
+			if(num>=80) {
+				System.out.println("합격");
+			} else {
+				System.out.println("불합격");
+				
+				Scanner sc = new Scanner(System.in);
+				System.out.print("총점: ");
+				int calcTot = sc.next();
+				System.out.print("평균: ");
+				int calcTot/3 = sc.nextInt();
+				System.out.print("학점: ");
+				int calcHak = sc.nextInt();
+				System.out.print("판정: ");
+				int calcRes = sc.nextInt();
+				int tot = kor+eng+mat; // 총점
+				double avg = (float) tot / 3; //평균
+				String pan = "탈락";
+				if(avg>=80) 
+				pan = "합격"; //판정
+				String des = "";
+				System.out.print(name+"님의 총점은"+tot+"이며, 평균은"+avg+"이고, 학점은 "+calcHak+"이고 "+pan+"하셨습니다.");
+				sc.close();
+
+				
+				int jum = 84;
+				String rank = "";
+				if(avg>=90) {
+					rank="A";
+				} else if(jum>=80) {
+					rank="B";
+				}
+				else if(jum>=70) {
+					rank="C";
+				}
+				else if(jum<=60){
+					rank="F";
+				}
+
+
+				System.out.println("당신의 점수는 "+jum+"점이며, 등급은 "+rank+"입니다.");
+			}
+
+		
+			
+
+
+
+

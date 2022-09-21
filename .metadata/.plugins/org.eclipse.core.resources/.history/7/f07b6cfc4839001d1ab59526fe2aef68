@@ -1,0 +1,23 @@
+package sec2;
+
+public class StudentEx {
+
+	public static void main(String[] args) {
+
+		System.out.println("총점: "+calcTot);
+		System.out.println("평균: "+calcTot/3);
+		System.out.println("학점: "+calcHak);
+		System.out.println("판정: "+calcRes);
+		
+	}
+	public static void pass(){
+		System.out.println("합격");
+	}
+	public static void fail(){
+		System.out.println("불합격");
+	}	
+
+
+	}
+
+
