@@ -1,0 +1,26 @@
+package sec2;
+
+import java.util.Scanner;
+
+public class ProductEx {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Product p1 = new Product();
+		System.out.println("제품코드: ");
+		p1.setPid(sc.next());
+		System.out.println("제품명: ");
+		p1.setPname(sc.next());
+		
+		Product st1 = new Product("a01", "냉장고", 3, 80000, "icetank01.jpg");
+		System.out.println("아이디\t제품명\t제품수량\t제품가격\t제품이미지");
+		System.out.println(p1.getPid+"\t"+p1.getPname()
+				+"\t"+st1.getAmount()+"\t"+st1.price()
+				+"\t"+st1.img());
+		
+	}
+
+}
+
+

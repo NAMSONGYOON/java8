@@ -1,48 +1,72 @@
 package sec2;
 
+import java.util.Date;
+
 public class Board {
-	int pno;
-	String ptitle;
-	String pcontents;
-	String writer;
-	int pdate;
+	private int idx;
+	private String title;
+	private String content;
+	private String author;
+	private Date resdate;
 	
-	public Board () { }
-	public Board (int pno){this.pno = pno; }
-	public Board(int pno, String ptitle, String pcontents, String writer, int pdate) {
-		this.pno = pno; this.ptitle = ptitle; this.pcontents = pcontents; this.writer = writer; this.pdate = pdate;
+	public int getIdx() {
+		return idx;
 	}
-	
-	public int getPno() {
-		return pno;
+	public void setIdx(int idx) {
+		this.idx = idx;
 	}
-	public void setPno(int pno) {
-		this.pno = pno;
+	public String getTitle() {
+		return title;
 	}
-	public String getPtitle() {
-		return ptitle;
+	public void setTitle(String title) {
+		this.title = title;
 	}
-	public void setPtitle(String ptitle) {
-		this.ptitle = ptitle;
+	public String getContent() {
+		return content;
 	}
-	public String getPcontents() {
-		return pcontents;
+	public void setContent(String content) {
+		this.content = content;
 	}
-	public void setPcontents(String pcontents) {
-		this.pcontents = pcontents;
+	public String getAuthor() {
+		return author;
 	}
-	public String getWriter() {
-		return writer;
+	public void setAuthor(String author) {
+		this.author = author;
 	}
-	public void setWriter(String writer) {
-		this.writer = writer;
+	public Date getResdate() {
+		return resdate;
 	}
-	public int getPdate() {
-		return pdate;
-	}
-	public void setPdate(int pdate) {
-		this.pdate = pdate;
+	public void setResdate(Date resdate) {
+		this.resdate = resdate;
 	}
 	
-	
+	public void boardWrite(int idx, String title, String content, String author, Date resdate){
+		this.idx = idx;
+		this.title = title;
+		this.content = content;
+		this.author = author;
+		this.resdate = resdate;
+	}
+	public void boardUpdate(int idx, String title, String content){
+		if(idx==this.idx){
+			this.title = title;
+			this.content = content;
+		}
+	}
+	public void boardDelete(int idx){
+		if(idx==this.idx){
+			try {
+				this.finalize();
+			} catch (Throwable e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	public void boardSearch(int idx){
+		if(idx==this.idx){
+			System.out.println(this.idx+"\t"+this.title+"\t"
+					+this.content+"\t"+this.author+"\t"
+					+this.resdate);
+		}
+	}
 }

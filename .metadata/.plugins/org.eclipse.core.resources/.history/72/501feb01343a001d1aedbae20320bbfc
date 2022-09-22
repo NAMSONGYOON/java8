@@ -1,0 +1,17 @@
+package sec2;
+
+public class ProductEx {
+
+	public static void main(String[] args) {
+
+		Product st1 = new Product("a01", "냉장고", 3, 80000, "icetank01.jpg");
+		System.out.println("아이디\t제품명\t제품수량\t제품가격\t제품이미지");
+		System.out.println(st1.pid+"\t"+st1.pname()
+				+"\t"+st1.amount()+"\t"+st1.price()
+				+"\t"+st1.img());
+		
+	}
+
+}
+
+

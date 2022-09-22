@@ -1,0 +1,76 @@
+package sec2;
+
+import java.util.Date;
+
+public class Board {
+	int pno;
+	String ptitle;
+	String pcontents;
+	String writer;
+	Date pdate;
+	
+	public void boardWrite(int pno, String ptitle, String pcontents, String writer, Date pdate ) {
+		this.pno = pno;
+		this.ptitle = ptitle;
+		this.pcontents = pcontents;
+		this.writer = writer;
+		this.pdate = pdate;
+	}
+	
+	public void boardUpdate(int pno, String ptitle, String pcontents) {
+		if(pno==this.pno) {
+			this.ptitle = ptitle;
+			this.pcontents = pcontents;
+		}
+	}
+	
+	public void boardDelete(int pno) {
+		if(pno==this.pno) {
+			try {
+				this.finalize();
+			} catch (Throwable e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public void boardSearch(int pno) {
+		if(pno==this.pno) {
+			System.out.println(this.pno+"\t"+this.ptitle+"\t"+this.pcontents+"\t"+this.writer+"\t"+this.pdate);
+		}
+	}
+
+	
+	public int getPno() {
+		return pno;
+	}
+	public void setPno(int pno) {
+		this.pno = pno;
+	}
+	public String getPtitle() {
+		return ptitle;
+	}
+	public void setPtitle(String ptitle) {
+		this.ptitle = ptitle;
+	}
+	public String getPcontents() {
+		return pcontents;
+	}
+	public void setPcontents(String pcontents) {
+		this.pcontents = pcontents;
+	}
+	public String getWriter() {
+		return writer;
+	}
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+	public int getPdate() {
+		return pdate;
+	}
+	public void setPdate(int pdate) {
+		this.pdate = pdate;
+	}
+	
+	
+}

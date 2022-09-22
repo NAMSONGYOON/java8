@@ -1,0 +1,85 @@
+package sec2;
+
+public class Board {
+	int pno;
+	String ptitle;
+	String pcontents;
+	String writer;
+	int pdate;
+	
+	public Board () { }
+	public Board (int pno){this.pno = pno; }
+	public Board(int pno, String ptitle, String pcontents, String writer, int pdate) {
+		this.pno = pno; this.ptitle = ptitle; this.pcontents = pcontents; this.writer = writer; this.pdate = pdate;
+		
+	}
+	
+	public void boardWrite(int pno, String ptitle, String pcontents ) {
+		this.pno = pno;
+		this.ptitle = ptitle;
+		this.pcontents = pcontents;
+		this.writer = writer;
+		this.pdate = pdate;
+	}
+	
+	public void boardUpdate(int pno, String ptitle, String pcontents) {
+		if(pno==this.pno) {
+			this.ptitle = ptitle;
+			this.pcontents = pcontents;
+		}
+	}
+	
+	public void boardDelete(int pno) {
+		if(pno==this.pno) {
+			try {
+				this.finalize();
+			} catch (Throwable e) {
+				printStackTrace();
+			}
+		}
+		return boardDelete;
+	}
+	
+	public void boardSearch() {
+		
+		return boardSearch;
+	}
+	
+	//boardWrite(게시글 쓰기 작업) 은 글번호, 글제목, 글내용, 작성자, 작성일을 입력받아 저장한다.//
+	//boardUpdate(게시글 수정 작업) 은 글번호, 글제목, 글내용 등을 매개변수로 받아 해당 글번호의 글을 수정할 수 있다.//
+	//boardDelete(게시글 삭제 작업) 은 글번호를 입력받아 해당 글번호에 데이터를 삭제 또는 초기화할 수 있다.//
+	//boardSearch(게시글 검색 작업) 글번호 등을 매개값으로 받아 해당 글번호에 글의 모든 내용을 출력할 수 있다.//
+	
+	public int getPno() {
+		return pno;
+	}
+	public void setPno(int pno) {
+		this.pno = pno;
+	}
+	public String getPtitle() {
+		return ptitle;
+	}
+	public void setPtitle(String ptitle) {
+		this.ptitle = ptitle;
+	}
+	public String getPcontents() {
+		return pcontents;
+	}
+	public void setPcontents(String pcontents) {
+		this.pcontents = pcontents;
+	}
+	public String getWriter() {
+		return writer;
+	}
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+	public int getPdate() {
+		return pdate;
+	}
+	public void setPdate(int pdate) {
+		this.pdate = pdate;
+	}
+	
+	
+}
