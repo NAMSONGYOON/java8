@@ -1,0 +1,9 @@
+package sec3;
+/* 싱글톤 : 자바 디자인 패턴 중에서 오로지 하나의 
+public class Singletone {
+	private static Singletone single = new Singletone();
+	private Singletone() {}
+	static Singletone getInstance() {
+		return single;
+	}
+}
