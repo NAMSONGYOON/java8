@@ -1,0 +1,11 @@
+package sec4;
+
+public class ElementaryStudent {
+
+	String name;
+	int jum1;
+	int jum2;
+	int jum3;
+	
+	
+}
